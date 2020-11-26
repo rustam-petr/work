@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Шахматная доска</title>
     <style>
         .chess td {
             border: 0;
@@ -12,11 +12,8 @@
             width: 50px;
             border-spacing: 0;
             text-align: center;
-            vertical-align: bottom;
-
+            vertical-align: middle;
         }
-
-        
         .chess1 tr:nth-child(odd) td:nth-child(even),
         .chess1 tr:nth-child(even) td:nth-child(odd) {
             background-color: black;
@@ -25,170 +22,175 @@
             width: 50px;
             text-align: center;
             vertical-align: middle;
-            
-
         }
-
-        .chess1 tr:nth-child(odd) td:first-child, /* в нечетной строке первая и последняя ячейки белые*/
-        .chess1 tr:nth-child(odd) td:last-child
-         {
+        .chess1 tr:nth-child(odd) td:first-child,
+        /* в нечетной строке первая и последняя ячейки белые*/
+        .chess1 tr:nth-child(odd) td:last-child {
             background-color: white;
             height: 50px;
             width: 50px;
             text-align: center;
-            /*border: solid;*/
         }
-        .chess1 tr:nth-child(even) td:first-child,/*в  четной строке первая и последняя ячейка белые*/
-        .chess1 tr:nth-child(even) td:last-child
-         {
+        .chess1 tr:nth-child(even) td:first-child,
+        /*в  четной строке первая и последняя ячейка белые*/
+        .chess1 tr:nth-child(even) td:last-child {
             background-color: white;
             height: 50px;
             width: 50px;
             text-align: center;
-            /*border: solid;*/
+        }
+        .chess1 tr:nth-child(odd) td:nth-child(odd),
+        .chess1 tr:nth-child(even) td:nth-child(even) {
+            border: 1px solid black;
+        }
+        .chess1 tr:nth-child(odd) td:first-child,
+        .chess1 tr:nth-child(even) td:last-child {
+            border: 0;
         }
         .chess2 td {
             border: 0;
             height: 50px;
             width: 50px;
             text-align: center;
-            vertical-align: top;
-
+            vertical-align:middle;
+        }
+        .chess4 {
+            border: 5px solid black;
+            width: 520px;
+            height: 520px;
         }
     </style>
 </head>
 
 <body>
-    <table class="chess">
-        <tr>
-            <td></td>
-            <td>A</td>
-            <td>B</td>
-            <td>C</td>
-            <td>D</td>
-            <td>E</td>
-            <td>F</td>
-            <td>G</td>
-            <td>H</td>
-            <td></td>
-        </tr>
-    </table>
-    <table class="chess1">
-
-        <tr>
-            <td>8</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>8</td>
-        </tr>
-
-        <tr>
-            <td>7</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>7</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>6</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>1</td>
-        </tr>
-
-    </table>
-    <table class="chess2">
-        <tr>
-            <td></td>
-            <td>A</td>
-            <td>B</td>
-            <td>C</td>
-            <td>D</td>
-            <td>E</td>
-            <td>F</td>
-            <td>G</td>
-            <td>H</td>
-            <td></td>
-        </tr>
-    </table>
-
+    <div class="chess4">
+        <table class="chess" cellspacing="0">
+            <tr>
+                <td></td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+                <td>G</td>
+                <td>H</td>
+                <td></td>
+            </tr>
+        </table>
+        <table class="chess1" cellspacing="0">
+            <tr>
+                <td>8</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+            </tr>
+        </table>
+        <table class="chess2" cellspacing="0">
+            <tr>
+                <td></td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+                <td>G</td>
+                <td>H</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
