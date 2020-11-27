@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --img-size: 500px;
+        }
+
+        .tut img {
+            height: calc(var(--img-size)/7);
+            width: calc(var(--img-size)/5);
+            filter: grayscale(100%);
+        }
+
+        .tut img:hover {
+            height: var(--img-size);
+            width: var(--img-size);
+            transition: 5s;
+            filter: grayscale(0%)
+        }
+
+        .tut {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tut"><img src="fon1.jpg"></div>
+    <img src="fon1.jpg">
+
+</body>
+
+</html>
