@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --img-size: 500px;
+        }
+
+        .tut img {
+            height: calc(var(--img-size)/7);
+            width: calc(var(--img-size)/5);
+            filter: grayscale(100%);
+            filter:  contrast(200%) drop-shadow(50%);
+            transition: 5s linear;
+            border: 10px double red;
+            /*padding: 50px;*/
+        
+        }
+
+        .tut img:hover {
+            height: var(--img-size);
+            width: var(--img-size);
+            filter: grayscale(0%) contrast(200%) sepia(50%);
+            transform: rotate3d(0, 1, 1, 360deg);
+            
+        }
+
+        .tut {
+            text-align: center;
+            margin-top: 100px;
+        }
+        .tut1 img {
+            height: calc(var(--img-size)/7);
+            width: calc(var(--img-size)/5);
+            filter: grayscale(100%);
+            filter:  contrast(200%) drop-shadow(50%);
+            transition: 1s linear;
+            border: 10px double red;
+            /*padding: 50px;*/
+        
+        }
+
+        .tut1 img:hover {
+            height: var(--img-size);
+            width: var(--img-size);
+            filter: grayscale(0%) contrast(200%) sepia(50%);
+            transform: rotate(360deg);
+            
+        }
+
+        .tut1 {
+            text-align: center;
+            margin-top: 100px;
+        }
+        .tut2 img {
+            height: calc(var(--img-size)/7);
+            width: calc(var(--img-size)/5);
+            filter: grayscale(100%);
+            filter:  contrast(200%) drop-shadow(50%);
+            transition: 1s linear;
+            border: 10px double red;
+            /*padding: 50px;*/
+        
+        }
+
+        .tut2 img:hover {
+            height: var(--img-size);
+            width: var(--img-size);
+            filter: grayscale(0%) contrast(200%) sepia(50%);
+            transform: rotateY(180deg);
+            
+        }
+
+        .tut2 {
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tut">
+        <img src="fon.jpg">
+        <img src="slon_ch.jpg">
+        <img src="fon.jpg">
+        <img src="fon.jpg">
+        <img src="stud2.gif">
+    </div>
+    <div class="tut1">
+        <img src="fon.jpg">
+        <img src="slon_ch.jpg">
+        <img src="fon.jpg">
+        <img src="fon.jpg">
+        <img src="fon.jpg">
+    </div> 
+     <div class="tut2">
+        <img src="fon.jpg">
+        <img src="slon_ch.jpg">
+        <img src="fon.jpg">
+        <img src="fon.jpg">
+        <img src="fon.jpg">
+    </div>
+   
+</body>
+</html>
