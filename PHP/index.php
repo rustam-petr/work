@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
- <?php echo 'HELLO WORLD' ?>
+ <?php echo 3/3 ?>
     
 </body>
 </html>
